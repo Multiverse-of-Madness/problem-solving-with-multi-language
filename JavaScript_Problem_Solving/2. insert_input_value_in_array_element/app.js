@@ -15,7 +15,7 @@ document.querySelector('.button-clicked').addEventListener('click', function () 
         // input value;
         const inputValue = input.value;
         // generate random number;
-        let randomValue = Math.floor((Math.random() * 3) + 3);
+        let randomValue = Math.floor((Math.random() * 3) + 4);
 
         // add input value;
         data.splice(randomValue, 0, inputValue);
@@ -26,20 +26,15 @@ document.querySelector('.button-clicked').addEventListener('click', function () 
         // store removed element;
         allData = data.slice(0, red);
 
-
-        console.log("all data", allData);
-
+        // remove data array element;
         data.splice(0, red);
-
-        data = data;
-
     }
     else {
         console.log('sorry');
     }
 
-    console.log(data);
 
+    console.log([...allData, ...data]);
 
 
     input.value = '';
