@@ -1,24 +1,30 @@
+// get html input value;
 let input = document.querySelector('.input-data');
 
-let data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
-// console.log(data.length);
+// our array;
+let data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'];
 
+let i = 0;
 
-
-
+// click button and add value;
 document.querySelector('.button-clicked').addEventListener('click', function () {
 
+    // get html input value;
+    const inputValue = input.value;
+    // let allData;
 
-
-
+    
+    i = i + 4;
+    
+    // console.log(i);
+    
     if (3 <= data.length) {
-        // input value;
-        const inputValue = input.value;
-        // generate random number;
-        let randomValue = Math.floor((Math.random() * 3) + 4);
+        
+        // data added index number
+        let rand = i
 
         // add input value;
-        data.splice(randomValue, 0, inputValue);
+        data.splice(rand, 0, inputValue);
 
         // search index value;
         let red = data.lastIndexOf(inputValue);
@@ -29,17 +35,14 @@ document.querySelector('.button-clicked').addEventListener('click', function () 
         // remove data array element;
         data.splice(0, red);
     }
-    else {
-        console.log('sorry');
-    }
 
+    // store array data;
+    data = [...allData, ...data];
 
-    console.log([...allData, ...data]);
+    console.log(data);
 
-
+    // this is use for html input value remove;
     input.value = '';
 
 });
-
-
 
