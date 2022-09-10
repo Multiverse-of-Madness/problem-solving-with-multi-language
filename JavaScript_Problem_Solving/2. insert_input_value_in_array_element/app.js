@@ -1,8 +1,8 @@
+// our array;
+const data = ['a', 'b', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+
 // get html input value;
 let input = document.querySelector('.input-data');
-
-// our array;
-let data = ['a', 'b'];
 
 // count 
 let count = 0;
@@ -16,9 +16,6 @@ document.querySelector('.button-clicked').addEventListener('click', function () 
     // get html input value;
     const inputValue = input.value;
 
-    // this variable use for removed data store; 
-    let allData;
-
     // count store number;
     count = count + randNumber;
 
@@ -27,18 +24,6 @@ document.querySelector('.button-clicked').addEventListener('click', function () 
 
     // add input value;
     data.splice(rand, 0, inputValue);
-
-    // search index value;
-    let red = data.lastIndexOf(inputValue);
-
-    // store removed element;
-    allData = data.slice(0, red);
-
-    // remove data array element;
-    data.splice(0, red);
-
-    // store array data;
-    data = [...allData, ...data];
 
     // display data use console;
     console.log(data);
