@@ -9,12 +9,11 @@ let count = 0;
 
 // click button and add value;
 document.querySelector('.button-clicked').addEventListener('click', function () {
+    // get html input value;
+    const inputValue = input.value;
 
     // generate random number;
     const randNumber = Math.floor((Math.random() * 3) + 3);
-
-    // get html input value;
-    const inputValue = input.value;
 
     // count store number;
     count = count + randNumber;
