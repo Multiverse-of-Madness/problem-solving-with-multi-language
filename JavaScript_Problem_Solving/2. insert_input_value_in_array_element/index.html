@@ -5,79 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- title name -->
     <title>Problem solving</title>
-
-
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: monospace;
-        }
-        body {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: monospace;
-        }
-
-        .input-box {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 60px;
-        }
-
-        .input-main{
-            width: 50%;
-        }
-
-        label {
-            font-size: 24px;
-            font-weight: 500;
-            margin: 0px 0px 10px 0px;
-            display: block;
-
-        }
-
-        input{
-            font-size: 18px;
-            font-weight: 500;
-            width: 100%; 
-            padding: 10px 8px;  
-            font-family: monospace;
-            margin-bottom: 8px;
-            outline: 0px;
-            border: 2px solid rgba(0, 0, 0, 0.743);
-            border-radius: 4px;
-        }
-
-
-        .button{
-            width: 100%;
-        }
-
-
-        button{
-            font-size: 20px;
-            font-weight: 500;
-            background-color: rgba(0, 0, 0, 0.743);
-            color: #fff;
-            padding: 10px 40px;
-            border: 0px;
-            border-radius: 6px;
-            transition: all .2s;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: rgba(0, 0, 0, 0.841);
-        }
-
-    </style>
-
 </head>
 
 <body>
@@ -85,9 +18,14 @@
     <!-- input -->
     <div class="input-box">
         <div class="input-main">
-            <label for="name">Enter your short name:</label>
+            <label for="name">Enter your text:</label>
             <div class="input-box-child">
-                <input type="text" class="input-data" id="name" placeholder="Type your text...">
+                <div class="input-area">
+                    <input type="text" class="input-data" id="name" placeholder="Enter your text...">
+                    <div class="error">
+                        <p>Please enter your text.</p>
+                    </div>
+                </div>
                 <div class="button">
                     <button class="button-clicked" type="button">Enter</button>
                 </div>
@@ -95,7 +33,25 @@
         </div>
     </div>
 
+    <div class="adding-array habi">
+        <div class="array">
+            <span class="array-tiltle"><u>Main Array</u>: </span>
+            <h2 class="add-main-array all-child-array"></h2>
+        </div>
+        <div class="recent-array">
+            <div class="array array-old">
+                <span class="array-tiltle"><u>Old Array</u>: </span>
+                <h2 class="add-old-array all-child-array"></h2>
+            </div>
+            <div class="array array-present">
+                <span class="array-tiltle"><u>Present Array</u>: </span>
+                <h2 class="add-present-array all-child-array"></h2>
+            </div>
 
+        </div>
+    </div>
+
+    <!-- custom js link -->
     <script src="./app.js"></script>
 
 

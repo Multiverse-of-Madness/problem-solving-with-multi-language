@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.input-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.input-main {
+    width: 50%;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+    display: block;
+
+}
+
+input {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 8px;
+    font-family: monospace;
+    margin-bottom: 8px;
+    outline: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.743);
+    border-radius: 4px;
+}
+
+
+.input-area {
+    padding: 0px 0px 16px 0px;
+    position: relative;
+}
+
+
+.button {
+    width: 100%;
+}
+
+
+button {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.743);
+    color: #fff;
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 6px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.841);
+}
+
+.adding-array {
+    width: 50%;
+    margin: 40px auto 0px auto;
+}
+
+.array {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 15px;
+}
+
+.array-tiltle {
+    margin-right: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.all-child-array {
+    font-weight: 500;
+    display: inline;
+    line-height: 30px;
+}
+
+.error {
+    display: none;
+    width: 50%;
+    margin: 0px auto 0px auto;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+}
+
+.error-show {
+    display: block;
+}
+
+.error p {
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+}
