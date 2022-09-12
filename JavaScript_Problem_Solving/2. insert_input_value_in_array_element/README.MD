@@ -7,7 +7,13 @@
 
     arr = ['xyz', '500', ' b', ' c', ' d', ' e', '45', ' g', ' h', ' i', ' j'];
 
-#### Received Output
+#### Received Data
 
-    arr = ['xyz', '500', ' b', 'obj', ' c', ' d','index', ' e', '45', ' g', ' h','yzx', ' i', ' j'];
+##### Input: 
+
+            obj, index, yzx, m, 1000
+            
+##### Output: 
+
+    arr = ['xyz', '500', ' b', 'obj', ' c', ' d','index', ' e', '45', ' g', ' h','yzx', ' i', ' j','m', 1000,];
 
