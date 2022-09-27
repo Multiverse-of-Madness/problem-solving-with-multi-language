@@ -13,7 +13,7 @@
 
             obj, index, yzx, m, 1000
             
-##### Output: 
+##### Result: 
 
     arr = ['xyz', '500', ' b', 'obj', ' c', ' d','index', ' e', '45', ' g', ' h','yzx', ' i', ' j','m', 1000,];
 
