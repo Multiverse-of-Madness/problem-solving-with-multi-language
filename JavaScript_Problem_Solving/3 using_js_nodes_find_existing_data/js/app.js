@@ -5,11 +5,11 @@ function findLiValue() {
     for (let data of child_nodes) {
         for (let d of data.childNodes) {
             if (d.nodeValue.toLowerCase === "hello") {
-                return 'i found it!';
+                return 'Yahoooo! I found it!';
             }
         }
     }
-    return 'Do not Found it!';
+    return "Opsss, I don't found it!";
 }
 
 
