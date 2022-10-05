@@ -1,7 +1,7 @@
 const complexNode = document.querySelector('#complexNode');
 const child_nodes = complexNode.childNodes[7].childNodes[1].childNodes;
 
-function findLiValue() {
+const findLiValue = function () {
     for (let data of child_nodes) {
         for (let d of data.childNodes) {
             if (d.nodeValue.toLowerCase === "hello") {
@@ -10,7 +10,7 @@ function findLiValue() {
         }
     }
     return "Opsss, I don't found it!";
-}
+};
 
 
 const value = findLiValue();
