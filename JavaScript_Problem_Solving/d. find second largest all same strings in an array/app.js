@@ -22,7 +22,7 @@ for (let i = 0; i < names.length; i++) {
 }
 
 
-// store all secondLargest same string. In an secondLargestNames array;
+// 1st System: Use for loop. And store all secondLargest same string. In an secondLargestNames array;
 const secondLargestNames = [];
 
 for (let i = 0; i < secondNamesArr.length; i++) {
@@ -32,3 +32,9 @@ for (let i = 0; i < secondNamesArr.length; i++) {
 }
 
 console.log(secondLargestNames);  // output: ['Rahima', 'Karima']
+
+
+// 2nd system: Use filter. And store all secondLargest same string. In an secondLargestNames array;
+const secondLargestNamesTow = secondNamesArr.filter((word) => word.length >= secLongName.length);
+
+console.log(secondLargestNamesTow);  // output: ['Rahima', 'Karima']
